@@ -52,7 +52,8 @@ A modern, full-stack Task Manager built with **React.js**, **Next.js (App Router
     └── models/
     └── utils/
 
-🔐 Environment Variables
+## 🔐 Environment Variables
+
 This project uses environment variables to manage sensitive configuration such as database credentials and authentication keys.
 
 To get started:
