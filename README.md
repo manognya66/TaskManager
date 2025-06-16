@@ -60,6 +60,6 @@ This project uses environment variables to manage sensitive configuration such a
 
 To get started:
 
-    Create a .env file in the root directory of your project.
-    Copy the content from the provided .env file.
-    Fill in your actual credentials in .env.
+    - Create a .env file in the root directory of your project.
+    - Copy the content from the provided .env file.
+    - Fill in your actual credentials in .env.
