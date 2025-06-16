@@ -54,6 +54,20 @@ A modern, full-stack Task Manager built with **React.js**, **Next.js (App Router
 
 ---
 
+### 📦 Getting Started
+
+Clone the repo and install dependencies:
+
+    git clone https://github.com/manognya66/TaskManager.git
+    cd TaskManager
+    npm install
+
+Start the development server:
+
+    npm run dev
+
+---
+
 ## 🔐 Environment Variables
 
 This project uses environment variables to manage sensitive configuration such as database credentials and authentication keys.
@@ -63,3 +77,11 @@ To get started:
     - Create a .env file in the root directory of your project.
     - Copy the content from the provided .env file.
     - Fill in your actual credentials in .env.
+
+---
+
+### 👤 Author
+
+    - GitHub: [@manognya66](https://github.com/manognya66)
+    - Email: manognya71003@gmail.com
+
