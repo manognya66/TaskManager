@@ -40,12 +40,14 @@ A modern, full-stack Task Manager built with **React.js**, **Next.js (App Router
 
 src/
 └── app/
+
     ├── add-tasks/
     ├── view-tasks/
     ├── progress-tracking/
     ├── signup/
     ├── signin/
     ├── user-profile/
+
 └── components/
 └── hooks/
 └── lib/
