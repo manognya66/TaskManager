@@ -52,12 +52,14 @@ A modern, full-stack Task Manager built with **React.js**, **Next.js (App Router
     └── models/
     └── utils/
 
+---
+
 ## 🔐 Environment Variables
 
 This project uses environment variables to manage sensitive configuration such as database credentials and authentication keys.
 
 To get started:
 
-Create a .env file in the root directory of your project.
-Copy the content from the provided .env file.
-Fill in your actual credentials in .env.
+    Create a .env file in the root directory of your project.
+    Copy the content from the provided .env file.
+    Fill in your actual credentials in .env.
