@@ -16,6 +16,7 @@
 # next.js
 /.next/
 /out/
+/.turbo/
 
 # production
 /build
@@ -23,6 +24,7 @@
 # misc
 .DS_Store
 *.pem
+.eslintcache
 
 # debug
 npm-debug.log*
@@ -39,3 +41,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# IDE settings
+.vscode/
+.idea/
+
+# Vercel (only if you deploy with Vercel)
+.vercel
