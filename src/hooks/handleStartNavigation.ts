@@ -11,7 +11,7 @@ export const useStartTaskNavigation = () => {
     if (isSignedIn) {
       router.push('/add-tasks');
     } else {
-      router.push('/login');
+      router.push('/signin');
     }
   };
 
