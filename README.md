@@ -36,23 +36,16 @@ A modern, full-stack Task Manager built with **React.js**, **Next.js (App Router
 
 ---
 
-## 📸 Screenshots
-
-> *(Add screenshots of the dashboard, task form, and progress tracking features here)*  
-![Screenshot](public/icons8-checklist-16.png)
-
----
-
 ## 📂 Folder Structure
 
 src/
 └── app/
-├── add-tasks/
-├── view-tasks/
-├── progress-tracking/
-├── signup/
-├── signin/
-├── user-profile/
+    ├── add-tasks/
+    ├── view-tasks/
+    ├── progress-tracking/
+    ├── signup/
+    ├── signin/
+    ├── user-profile/
 └── components/
 └── hooks/
 └── lib/
