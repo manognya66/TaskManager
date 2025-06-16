@@ -39,17 +39,17 @@ A modern, full-stack Task Manager built with **React.js**, **Next.js (App Router
 ## 📂 Folder Structure
 
 src/
-└── app/
+    └── app/
 
-    ├── add-tasks/
-    ├── view-tasks/
-    ├── progress-tracking/
-    ├── signup/
-    ├── signin/
-    ├── user-profile/
+        ├── add-tasks/
+        ├── view-tasks/
+        ├── progress-tracking/
+        ├── signup/
+        ├── signin/
+        ├── user-profile/
 
-└── components/
-└── hooks/
-└── lib/
-└── models/
-└── utils/
+    └── components/
+    └── hooks/
+    └── lib/
+    └── models/
+    └── utils/
