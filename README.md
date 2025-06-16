@@ -38,7 +38,7 @@ A modern, full-stack Task Manager built with **React.js**, **Next.js (App Router
 
 ## 📂 Folder Structure
 
-src/
+    src/
     
     └── app/
 
