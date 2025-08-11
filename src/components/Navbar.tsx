@@ -9,10 +9,10 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full max-w-screen-2xl mx-auto text-white px-4 py-4 flex justify-between items-center relative">
+    <nav className="w-full max-w-screen-2xl mx-auto px-4 py-4 flex justify-between items-center relative text-black md:text-white">
       {/* Logo + Title */}
       <Link href="/" title="Home" className="flex items-center space-x-3">
-        <FaListCheck className="h-8 w-8 text-white" />
+        <FaListCheck className="h-8 w-8 text-black md:text-white" />
         <span className="text-2xl sm:text-3xl font-bold">Task Flow</span>
       </Link>
 
@@ -27,12 +27,16 @@ export default function Navbar() {
         className="md:hidden focus:outline-none z-20"
         aria-label="Toggle Menu"
       >
-        {isOpen ? <FaXmark className="h-6 w-6" /> : <FaBars className="h-6 w-6" />}
+        {isOpen ? (
+          <FaXmark className="h-6 w-6 text-black md:text-white" />
+        ) : (
+          <FaBars className="h-6 w-6 text-black md:text-white" />
+        )}
       </button>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="absolute top-16 left-0 w-full bg-gray-900 text-white shadow-lg rounded-md p-4 md:hidden z-10">
+        <div className="absolute top-16 left-0 w-full bg-white text-black shadow-lg rounded-md p-4 md:hidden z-10">
           <NavbarLinks onMobileClick={() => setIsOpen(false)} />
         </div>
       )}
