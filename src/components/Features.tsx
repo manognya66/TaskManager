@@ -45,7 +45,7 @@ export default function FeatureSection() {
         >
           <div className="flex items-center space-x-4 mb-2">
             {feature.icon}
-            <h3 className="text-xl font-semibold">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
               {feature.title}
             </h3>
           </div>
