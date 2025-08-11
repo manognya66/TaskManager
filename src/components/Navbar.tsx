@@ -9,7 +9,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full max-w-screen-2xl mx-auto text-white px-4 py-4 flex justify-between items-center relative text-black md:text-black">
+    <nav className="w-full max-w-screen-2xl mx-auto text-white px-4 py-4 flex justify-between items-center relative">
       {/* Logo + Title */}
       <Link href="/" title="Home" className="flex items-center space-x-3">
         <FaListCheck className="h-8 w-8 text-white" />
