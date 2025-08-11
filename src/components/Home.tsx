@@ -5,13 +5,13 @@ import { HiPlus } from 'react-icons/hi';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FeatureSection from './Features';
-import { useStartTaskNavigation } from '@/hooks/handleStartNavigation';
+import useStartTaskNavigation from '@/hooks/handleStartNavigation';
 
 export default function Home() {
   const { handleStartClick } = useStartTaskNavigation();
 
   return (
-    <div className="min-h-screen py-2 w-full bg-white dark:bg-gray-900 transition-colors duration-300 text-gray-900 dark:text-gray-100">
+    <div className="min-h-screen py-2 w-full bg-white md:bg-gray-900 transition-colors duration-300 text-gray-900 md:text-white">
       {/* ✅ Navbar */}
       <Navbar />
 
@@ -32,7 +32,7 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.6 }}
-          className="text-base sm:text-lg md:text-xl text-center max-w-2xl text-blue-800 dark:text-blue-200 mb-12"
+          className="text-base sm:text-lg md:text-xl text-center max-w-2xl text-blue-590 dark:text-blue-900 mb-12"
         >
           Your all-in-one tool to plan, prioritize, and progress.
         </motion.p>
@@ -45,7 +45,8 @@ export default function Home() {
           type="button"
           onClick={handleStartClick}
           whileTap={{ scale: 0.95 }}
-          className="flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 bg-blue-600 text-white text-base sm:text-lg font-medium rounded-xl shadow cursor-pointer hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 hover:scale-105 transition-all duration-300"
+          className="flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 bg-blue-600 text-white text-base sm:text-lg font-medium 
+          rounded-xl shadow cursor-pointer hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 hover:scale-105 transition-all duration-300"
         >
           <HiPlus className="w-6 h-6" />
           <span>Start Adding Your Tasks</span>

@@ -3,7 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { useUser } from '@clerk/nextjs';
 
-export const useStartTaskNavigation = () => {
+const useStartTaskNavigation = () => {
   const router = useRouter();
   const { isSignedIn } = useUser();
 
@@ -17,3 +17,5 @@ export const useStartTaskNavigation = () => {
 
   return { handleStartClick };
 };
+
+export default useStartTaskNavigation;

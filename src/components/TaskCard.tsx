@@ -12,7 +12,7 @@ import {
   formatDate,
   formatTimeWithUpperAMPM,
 } from '@/hooks/taskUtils';
-import { Task } from '@/hooks/useLocalStorageTasks';
+import { Task } from '@/hooks/useTaskManager';
 
 interface Props {
   task: Task;

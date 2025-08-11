@@ -1,6 +1,5 @@
 //components/TaskForm.tsx
 'use client';
-'use client';
 import { useState } from 'react';
 import { HiOutlinePlus } from 'react-icons/hi';
 

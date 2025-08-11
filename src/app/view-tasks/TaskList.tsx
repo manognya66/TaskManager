@@ -1,6 +1,6 @@
-  //view-tasks/TaskList.tsx
-  'use client';
-import TaskCard from '../../components/TaskCard';
+//view-tasks/TaskList.tsx
+'use client';
+import TaskCard from '@/components/TaskCard';
 import { AnimatePresence, motion } from 'framer-motion';
 import Link from 'next/link';
 import { useTaskManager } from '@/hooks/useTaskManager';
@@ -14,12 +14,20 @@ export default function TaskList() {
     <div className="w-full px-4 sm:px-6 max-w-3xl mx-auto space-y-6">
       <AnimatePresence>
         {tasks.map((task) => (
-          <TaskCard
+          <motion.div
             key={task.id}
-            task={task}
-            onToggle={toggleTask}
-            onDelete={deleteTask}
-          />
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.2 }}
+          >
+            <TaskCard
+              key={task.id}
+              task={task}
+              onToggle={toggleTask}
+              onDelete={deleteTask}
+            />
+          </motion.div>
         ))}
       </AnimatePresence>
 
@@ -29,7 +37,7 @@ export default function TaskList() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center text-gray-400 dark:text-gray-500 mt-8 flex flex-col items-center gap-4"
         >
-          <p className="text-base sm:text-lg text-gray-500 dark:text-gray-400">
+          <p className="text-base sm:text-lg text-gray-500 dark:text-gray-900">
             Your task list is empty — time to add some!
           </p>
           <Link

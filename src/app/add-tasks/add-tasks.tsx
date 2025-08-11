@@ -15,7 +15,7 @@ export default function AddTasks() {
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="text-center text-gray-500 dark:text-gray-300 text-base sm:text-lg"
+          className="text-center text-gray-500 dark:text-gray-900 text-base sm:text-lg"
         >
           No tasks yet. Start by adding one!
         </motion.p>
@@ -23,4 +23,3 @@ export default function AddTasks() {
     </div>
   );
 }
-

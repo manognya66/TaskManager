@@ -19,7 +19,7 @@ export function ProgressBar({ tasks }: Props) {
           style={{ width: `${percent}%` }}
         />
       </div>
-      <p className="text-sm sm:text-md text-gray-600 dark:text-gray-400 text-center sm:text-left">
+      <p className="text-sm sm:text-md text-gray-900 dark:text-gray-900 text-center sm:text-left">
         {percent.toFixed(0)}% completed
       </p>
     </div>
@@ -33,15 +33,15 @@ export function SummaryCards({ tasks }: Props) {
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-10 px-4 sm:px-0 w-full max-w-6xl mx-auto mt-6">
-      <div className="bg-blue-100 dark:bg-blue-900 p-4 sm:p-6 rounded-xl shadow text-center">
+      <div className="bg-blue-100 dark:bg-blue-900 p-4 sm:p-6 rounded-xl shadow text-center text-white md:text-white">
         <p className="text-base sm:text-xl font-semibold">Total Tasks</p>
         <p className="text-2xl sm:text-3xl font-bold">{total}</p>
       </div>
-      <div className="bg-green-100 dark:bg-green-900 p-4 sm:p-6 rounded-xl shadow text-center">
+      <div className="bg-green-100 dark:bg-green-900 p-4 sm:p-6 rounded-xl shadow text-center text-white md:text-white">
         <p className="text-base sm:text-xl font-semibold">Completed</p>
         <p className="text-2xl sm:text-3xl font-bold">{completed}</p>
       </div>
-      <div className="bg-yellow-100 dark:bg-yellow-900 p-4 sm:p-6 rounded-xl shadow text-center">
+      <div className="bg-yellow-100 dark:bg-yellow-900 p-4 sm:p-6 rounded-xl shadow text-center text-white md:text-white">
         <p className="text-base sm:text-xl font-semibold">Pending</p>
         <p className="text-2xl sm:text-3xl font-bold">{pending}</p>
       </div>

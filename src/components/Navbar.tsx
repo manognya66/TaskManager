@@ -27,16 +27,12 @@ export default function Navbar() {
         className="md:hidden focus:outline-none z-20"
         aria-label="Toggle Menu"
       >
-        {isOpen ? (
-          <FaXmark className="h-6 w-6 text-black md:text-white" />
-        ) : (
-          <FaBars className="h-6 w-6 text-black md:text-white" />
-        )}
+        {isOpen ? <FaXmark className="h-6 w-6" /> : <FaBars className="h-6 w-6" />}
       </button>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="absolute top-16 left-0 w-full bg-white text-black shadow-lg rounded-md p-4 md:hidden z-10">
+        <div className="absolute top-16 left-0 w-full bg-gray-900 text-white shadow-lg rounded-md p-4 md:hidden z-10">
           <NavbarLinks onMobileClick={() => setIsOpen(false)} />
         </div>
       )}
